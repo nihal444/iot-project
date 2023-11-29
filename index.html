@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IOT SMART ELECTRICITY ENERGY METER</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="image\nav-icon.jpg" alt="" width="100" height="50"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#components">Components</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#circuit">Circuit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#working">Working</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#code">Code</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="header-sec">
+        <h1 class="header-title">IOT SMART ELECTRICITY ENERGY METER</h1><br>
+        <h5 class="header-discription">  <p>   By:-
+          NIHAL,
+           NIKHIL R CHANDAN,
+            RANJAN SHETTIGAR</p>
+          
+          
+          Under the Guidance of
+          DR. JASON ELROY MARTIS
+          
+        </h5>
+      </section>
+
+      <section class="feature-sec">
+        <div class="image">
+          <img  src="image/e.jpg" alt="" width="900" height="300">
+            </div>
+      </section>
+
+      <section id="components" class="colored-section centered-section">
+         <h2 class="component-header">Components Used</h2>
+        <div id="carouselExampleControls" class="carousel slide " data-bs-ride="false" >
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <div class="row">
+                <div class="in-one-carousel col-md-4">
+                <img class="opinion-img" src="image/4.1.jfif" alt="" width="200" height="200">
+                <h5>ESP32 Wi-Fi Board</h5>
+               </div>
+               <div class="in-one-carousel col-md-4">
+                <img class="opinion-img" src="image/5.jfif" alt="" width="200" height="200">
+                <h5>ZMPT101B AC Single Phase Voltage Sensor</h5>
+               </div>
+               <div class="in-one-carousel col-md-4">
+                <img class="opinion-img" src="image/3.jfif" alt="" width="200" height="200">
+                <h5>SCT-013-030 Non-invasive AC Current Sensor</h5>
+               </div>
+               </div>
+              </div>
+              <div class="carousel-item " >
+                <div class="carousel-item active ">
+                    <div class="row">
+                    <div class="in-one-carousel col-md-4">
+                    <img class="opinion-img" src="image/7.jpeg" alt="" width="200" height="200">
+                    <h5>20x4 I2C LCD Display</h5>
+                   </div>
+                   <div class="in-one-carousel col-md-4">
+                    <img class="opinion-img" src="image/resistors.jpeg" alt="" width="200" height="200">
+                    <h5>Resistors</h5>
+                   </div>
+                   <div class="in-one-carousel col-md-4">
+                    <img class="opinion-img" src="image/c.jpg" alt="" width="200" height="200">
+                    <h5>Capacitors</h5>
+                   </div>
+                   </div>
+                  </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" ></span>
+              
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" ></span>
+              
+            </button>
+          </div>
+    </section>
+<div class="explaination-box">
+    <section class="circuit-diagram" id="circuit">
+        <h3 style="margin-bottom: 2.5%;">Circuit of the Project</h3><br>
+        <div class="row">
+          <div class="col-md-6" >
+              <img class="circuit" src="image\2.jfif" alt="" width="90%"  >
+          </div>
+          <div class="col-md-6" >
+              <img src="image\f.jpg" alt="" class="connection" width="90%"  >
+          </div>
+      </div><br><br>
+        
+        <br><br>
+       <p class="Explaination">
+        
+        <ul>
+          <li> The circuit diagram for the IoT-based Electricity Energy Meter using ESP32 is shown below. The design was created using the 
+            Fritzing software and the connection diagram is simple. The VCC & GND pins of both the SCT-013 Current Sensor and ZMPT101B Voltage Sensor are connected to the Vin & GND of ESP32, which is a 5V supply. The output analog pin of the ZMPT101B Voltage Sensor is connected to the GPIO35 of ESP32 and the output analog pin of the SCT-013 Current Sensor is connected to the GPIO34 of ESP32. Additionally, 
+            two 10K resistors and a single 100-ohm resistor, along with a 10uF capacitor, are required to complete the circuit.</li>
+        </ul>
+      </p>
+        
+        
+
+    </section>
+
+    <section class="blynk-setup">
+        <h3 style="margin-bottom: 2.5%;">Set up Blynk IoT Cloud for the IoT-based Project</h3>
+        <div class="blynk-1">
+        <br>
+        <div class="row">
+            <div class="col-md-6" >
+                <img class="circuit"src="image\b1.jpg" alt="" width="90%"  >
+            </div>
+            <div class="col-md-6" >
+                <img src="image\b2.jpg" alt="" class="connection" width="90%"  >
+            </div>
+        </div><br><br>
+        <p class="Explaination">
+          <ul>
+            <li>Blynk is an application that runs over Android and IOS devices to control any IoT based application using Smartphones. It allows you to create your Graphical user interface for IoT application. Here we will display the IoT Energy Meter Data on Blynk Web Dashboard and also in mobile Application.Visit blynk.io and sign up using the email ID.First Create a New Template.Assign the name, Hardware & Connection Type.From the Web Dashboard, Create 4 widgets Gauge.The 4 widgets are here to display the value of Vrms, Irms, Power & KWh. Do the settings as per the image below.Finally the Web Dashboard looks something like this and is ready to receive the Smart Energy Meter Data from ESP32.
+              Apart from the Web Dashboard, you can also set up your Mobile App Dashboard.You can download and install the Blynk Application from Google Play Store. IOS users can download from the App Store.Once the installation is completed, open the app & sign-up using your Email id and Password. Then set up the app similar like Web Dashboard.
+              
+              </li>
+          </ul>
+          </p>
+      </div><br><br>
+  
+
+    <section id="working">
+      <h3>Working</h3><br>
+      <div class="blynk-2">
+       <br>
+        <div class="row">
+            <div class="col-md-6" >
+                <img class="circuit"src="image\ot1.jfif" alt="" width="90%"  >
+            </div>
+            <div class="col-md-6" >
+              <img src="image\1.jfif" alt="" width="90%"  >
+          </div>
+        </div><br>
+        <p class="Explaination">
+          <ul>
+            <li>The IoT Smart Electricity Energy Meter, utilizing the listed components, operates on the principle of real-time monitoring and data transmission for efficient energy management. The ESP32 Wi-Fi module serves as the central controller, orchestrating the integration of the ZMPT101B AC Voltage Sensor and SCT-013-030 Non-invasive AC Current Sensor. The voltage sensor measures the alternating current (AC) voltage, providing a proportional analog output. Simultaneously, the current sensor, which operates non-invasively, captures the AC current flowing through a conductor without direct contact. The ESP32 processes these sensor inputs, calculates power consumption, and displays the information on the 20x4 I2C LCD Display. The 10K and 100-ohm resistors, along with the 10uF capacitor, contribute to signal conditioning and filtering, ensuring accurate readings.
+              The ESP32, equipped with Wi-Fi capabilities, facilitates seamless communication, enabling users to remotely monitor energy consumption patterns and make informed decisions for optimizing power usage. This interconnected system exemplifies the synergy of IoT technologies in creating a smart meter that not only measures electricity usage accurately but also empowers users to enhance energy efficiency and contribute to sustainable consumption practices.</li>
+          </ul>
+        </p>
+        </div><br>
+
+        <div class="blynk-2">
+          <h4>Conclusion</h4><br>
+          <div class="row">
+            
+          <p class="Explaination">
+            <ul>
+              <li>In conclusion, the utilization of ESP32 and Blynk 2.0 to create an IoT Based Smart Electricity Energy Meter will bring forth a groundbreaking transformation in the monitoring and measurement of electricity usage. By implementing this IoT-based solution, the need for manual meter readings is eliminated, resulting in saved time and cost.
+                By employing high-quality current and voltage sensors, precise measurements of voltage, current, power, and total energy consumption can be acquired. The data can be accessed from any location through the Blynk 2.0 dashboard. Moreover, in the event of power outages, the energy meter data is securely stored in the EEPROM of the ESP32, ensuring uninterrupted readings.
+                </li><br>
+            </ul>
+          </p>
+          </div>
+
+   
+
+        
+    </section>
+    
+    <section id="code">
+      <h4>Source Code</h4><br>
+      <a href="code\code.txt" class="btn btn-primary btn-lg" download>Click here</a>
+    </section>
+    
+  </div>
+  <footer id="footer"  class=" white-section similar-section centered-section">
+
+    <p class="neglected-para">© Electrical safety is not a choice, its a responsiblity.</p>
+
+  </footer>
+</body>
+</html>
